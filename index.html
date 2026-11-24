@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Assignment 3 - Muhammad Mazhar Afzal</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #222; }
+    h1 { margin-bottom: 4px; }
+    .roll { color: #555; margin-top: 0; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 24px; }
+    button { padding: 8px 16px; cursor: pointer; }
+    input { padding: 8px; width: 60%; }
+    #message, #output { font-weight: bold; color: #0a7d32; min-height: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1 id="student-name">Muhammad Mazhar Afzal</h1>
+  <p class="roll" id="roll-number">Roll Number: SP23-BAI-035</p>
+  <h2 id="page-title">Cloud Computing - Automated CI/CD Pipeline</h2>
+
+  <div class="card">
+    <button id="greet-btn" type="button">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <div class="card">
+    <label for="user-input">Enter some text:</label><br><br>
+    <input id="user-input" type="text" placeholder="Type here...">
+    <button id="submit-btn" type="button">Submit</button>
+    <p id="output"></p>
+  </div>
+
+  <script>
+    document.getElementById("greet-btn").addEventListener("click", function () {
+      document.getElementById("message").textContent = "Hello! The CI/CD pipeline is working.";
+    });
+    document.getElementById("submit-btn").addEventListener("click", function () {
+      var text = document.getElementById("user-input").value;
+      document.getElementById("output").textContent = "You entered: " + text;
+    });
+  </script>
+</body>
+</html>
