@@ -1,3 +1,4 @@
 *.png
 test-results/
 __pycache__/
+ngrok.exe
